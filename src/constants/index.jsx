@@ -1,12 +1,3 @@
-import {
-  analytics,
-  dashboard,
-  Provid,
-  hoobank,
-  quote,
-  portfoliosample,
-} from '../assets';
-  
 export const navLinks = [
   {
     id: 'about',
@@ -163,30 +154,28 @@ export const testimonials = [
   
 export const projects = [
   {
-    name: 'Random Quote Generator',
-    description: 'A Fully Responsive Random Quote generating website project given by Free Code Camp while completing Front-End Libraries Certifications built using React.JS , Bootstrap CSS and HTML.',
+    name: 'Car and Driver',
+    description: 'Car and Driver is a respected automotive publication known for its comprehensive reviews, industry insights, and engaging content, catering to the interests of car enthusiasts worldwide. With a legacy of excellence, it continues to be a trusted source of information in the dynamic world of automobiles.',
     tags: [
       {
-        name: 'react',
+        name: 'Angular 2',
         color: 'blue-text-gradient',
       },
       {
-        name: 'bootstrap',
+        name: 'JavaScript',
         color: 'pink-text-gradient',
       },
       {
-        name: 'quoteapi',
+        name: 'TypeScript',
         color: 'orange-text-gradient',
       },
     ],
-    image: quote,
-    source_code_link: 'https://github.com/omunite215/FCC-Random-Quote-Generator',
-    netlify_link: 'https://randomquotegeneratorbyom.netlify.app/',
+    image: 'projects/car-and-driver.png',
+    url: 'https://www.caranddriver.com',
   },
   {
-    name: 'Admin Dashboard UI',
-    description:
-      'React Admin Dashboard is a stunning web application that has a beautiful User Interface and has been built using advanced JavaScript concepts, React, and Tailwind CSS which has different graphs, stats and themes.',
+    name: 'ABOUT YOU',
+    description: 'About You is a pioneering fashion-tech company that combines personalized shopping experiences with cutting-edge technology. With a focus on individuality, they provide curated recommendations tailored to each customer\'s unique style. Embracing sustainability and inclusivity, About You is revolutionizing the way we shop for fashion.',
     tags: [
       {
         name: 'react',
@@ -201,14 +190,12 @@ export const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: dashboard,
-    source_code_link: 'https://github.com/omunite215/React-Admin-DashBoard',
-    netlify_link: 'https://reactadmindashboardbyom.netlify.app/',
+    image: 'projects/about-you.png',
+    url: 'https://en.aboutyou.de/',
   },
   {
-    name: 'HooBank',
-    description:
-      'A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React',
+    name: 'Immowelt',
+    description: 'Immowelt, a flagship platform of AVIV Group, stands as a prominent real estate marketplace renowned for its innovative property solutions. As a Senior Frontend Developer, I spearhead the creation of seamless, visually engaging web applications. By optimizing performance and offering mentorship to junior developers, I play a pivotal role in ensuring Immowelt\'s user-friendly and high-performing platform. This enables users to effortlessly navigate through an extensive array of property listings, making their real estate experience with Immowelt a breeze.',
     tags: [
       {
         name: 'react',
@@ -219,78 +206,7 @@ export const projects = [
         color: 'green-text-gradient',
       },
     ],
-    image: hoobank,
-    source_code_link: 'https://github.com/omunite215/hoobank',
-    netlify_link: 'https://hoobankbyom.netlify.app/',
-  },
-  {
-    name: 'Provid A Youtube Clone',
-    description:
-      'Provid is a YouTube clone project built with React, Material UI, and Tailwind CSS. The platform has been designed with a stunning dark mode that enhances the viewing experience. The user interface is intuitive and easy to navigate, ensuring that users can easily find the content they\'re looking for.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'materialui',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'rapidapi',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: Provid,
-    source_code_link: 'https://github.com/omunite215/Provid-A-YouTube-Clone',
-    netlify_link: 'https://providbyom.netlify.app/',
-  },
-  {
-    name: 'Analytics HomePage',
-    description:
-      'A responsive HomePage which is a product page of an Analytics displaying its products features, clients, feedbacks and many more. It has a beautiful interface made using Tailwind CSS and React.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: analytics,
-    source_code_link: 'https://github.com/omunite215/Analytics-Web-App',
-    netlify_link: 'https://analyticsbyom.netlify.app/',
-  },
-  {
-    name: 'A 3D Developer Portfolio',
-    description:
-      'A responsive 3D Portfolio website which is made using Three.js a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL. It has a beautiful interface made using Tailwind CSS and React.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'threejs',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'emailjs',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: portfoliosample,
-    source_code_link: 'https://github.com/omunite215/portfolio',
-    netlify_link: 'https://portfoliobyompatel.netlify.app/',
+    image: 'projects/immowelt.png',
+    url: 'https://www.immowelt.de/',
   },
 ];

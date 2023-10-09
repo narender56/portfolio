@@ -1,19 +1,19 @@
 import {React, useState, useRef }from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../HigherOrderComponents';
 import { slideIn } from '../utils/motion';
 
-
 const Contact = () => {
   const formRef = useRef();
  
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
  
   const [loading, setLoading] = useState(false);
@@ -21,29 +21,42 @@ const Contact = () => {
   const handleChange = (e) => {
     const {name, value} = e.target;
     setForm({...form, [name]: [value]})
+  };
+
+  const resetForm = () => {
+    setLoading(false);
+    setForm({
+      name: '',
+      email: '',
+      message: '',
+    })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!form.email || !form.name || !form.message) {
+      alert('I know you wanna test this out but I already got it covered, enter some details human 🤣');
+      return
+    };
     setLoading(true);
-    emailjs.send("service_91ssn8g", "template_jjegxdr", {
-      from_name: form.name,
-      to_name: 'Om Patel',
-      from_email: form.email,
-      to_email: "omunite21@gmail.com",
-      message: form.message
-    }, "VeFeVdEHL9F9_i6xp").then(() => {
+
+    try {
+      const templateId = 'template_rzk05xg';
+      const serviceId = 'service_ugeqy9p';
+      const publicKey = 'NDmru8ETItNHefrgM';
+      await emailjs.send(serviceId, templateId, {
+        from_name: form.name,
+        to_name: 'Naren',
+        from_email: form.email,
+        to_email: 'narenderv7@gmail.com',
+        message: form.message
+      }, publicKey);
+      alert('Got your message, hang in there, I\'ll get back ASAP 🙂');
+      resetForm();
+    } catch (err) {
       setLoading(false);
-      alert("A humble thanks for reaching me out. I will respond to you as soon as possible.")
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      }, (error) => {
-        setLoading(false);
-        alert('Sorry!! Something went wrong!!')
-      })
-    })
+      alert('Oh no! 🫨, this shouldn\'t have happened, please try again!')
+    }
   }
 
   return (

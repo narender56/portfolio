@@ -23,12 +23,10 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   return (
     <div className="mt-12">
-      <div
-        className={`${styles.padding} rounded-2xl min-h-[300px]`}
-      >
+      <div className={`${styles.padding} rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Social Profiles</h2>
-      </motion.div>
+          <h2 className={styles.sectionHeadText}>Social Profiles</h2>
+        </motion.div>
       </div>
       
       <div className={`${styles.paddingX} -mt-20 pb-14 flex justify-between flex-wrap gap-7`}>
