@@ -1,14 +1,18 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { SectionWrapper } from "../HigherOrderComponents";
-import { fadeIn, textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { SectionWrapper } from '../HigherOrderComponents';
+import { fadeIn, textVariant } from '../utils/motion';
+import { SocialLinks, Social } from '../constants';
+
+interface FeedbackCardProps extends Social {
+  index: number;
+}
 
 const FeedbackCard = ({
   index,
   link,
   image,
-}) => (
+}: FeedbackCardProps) => (
   <motion.div
     variants={fadeIn('', 'spring', index * 0.5, 0.75)}
   >
@@ -20,7 +24,7 @@ const FeedbackCard = ({
   </motion.div>
 );
 
-const Feedbacks = () => {
+export const Feedbacks = SectionWrapper(() => {
   return (
     <div className="mt-12">
       <div className={`${styles.padding} rounded-2xl min-h-[300px]`}>
@@ -30,12 +34,10 @@ const Feedbacks = () => {
       </div>
       
       <div className={`${styles.paddingX} -mt-20 pb-14 flex justify-between flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.key} index={index} {...testimonial} />
+        {SocialLinks.map((socialLink, index) => (
+          <FeedbackCard key={index} index={index} {...socialLink} />
         ))}
       </div>
     </div>
   );
-};
-
-export default SectionWrapper(Feedbacks, "");
+}, 'social-links');

@@ -4,8 +4,12 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { SectionWrapper } from '../HigherOrderComponents';
-import { projects } from '../constants';
+import { Project, projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+
+interface ProjectCardProps extends Project{
+  index: number;
+}
 
 const ProjectCard = ({
   index,
@@ -14,7 +18,7 @@ const ProjectCard = ({
   tags,
   image,
   url,
-}) => {
+}: ProjectCardProps) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -67,7 +71,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+export const Projects = SectionWrapper(() => {
   return (
     <div>
       <motion.div variants={textVariant()}>
@@ -91,6 +95,4 @@ const Works = () => {
       </div>
     </div>
   );
-};
-
-export default SectionWrapper(Works, '');
+}, 'Projects');

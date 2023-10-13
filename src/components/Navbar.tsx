@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { mylogo, menu, close } from '../assets';
 import ResumeButton from './ResumeButton';
 
 
-const Navbar = () => {
+export const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +26,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleProfileClick = (e) => {
+  const handleProfileClick = (e: any) => {
     e.stopPropagation();
   }
 
@@ -43,7 +42,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={mylogo} alt="logo" className="w-9 h-9 object-contain" />
+            <img src="mylogo.webp" alt="logo" className="w-9 h-9 object-contain" />
             Naren <span className="sm:block hidden mx-1">|</span>
           </Link>
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
@@ -68,7 +67,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            src={toggle ? close : menu}
+            src={(toggle ? 'close.svg' : 'menu.svg')}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
@@ -100,5 +99,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

@@ -1,20 +1,21 @@
 import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { services } from '../constants';
+import { Service, services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../HigherOrderComponents';
 
-const ServiceCard = ({ index, title, tech, icon }) => (
+interface ServiceCardProps extends Service {
+  index: number;
+}
+
+const ServiceCard = ({ index, title, tech, icon }: ServiceCardProps) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
       className="w-full h-full green-pink-gradient p-[1px] rounded-lg shadow-card"
     >
-      <div
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="h-full bg-tertiary rounded-lg flex items-stretch flex-col"
-      >
+      <div className="h-full bg-tertiary rounded-lg flex items-stretch flex-col">
         <img src={icon} alt={title} className="w-full rounded-t-lg" />
         <h3 className="py-5 px-2 text-white text-[20px] font-bold text-center">
           {title}
@@ -29,7 +30,7 @@ const ServiceCard = ({ index, title, tech, icon }) => (
   </Tilt>
 )
 
-const About = () => {
+export const About = SectionWrapper(() => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -54,6 +55,4 @@ const About = () => {
       </div>
     </>
   );
-};
-
-export default SectionWrapper(About, 'about');
+}, 'about');

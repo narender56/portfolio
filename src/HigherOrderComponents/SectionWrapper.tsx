@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 import { styles } from '../styles';
 import { staggerContainer } from '../utils/motion';
 
-const SectionWrapper = (Component, id) => {
+export const SectionWrapper = (Component: () => React.JSX.Element, id: string) => {
  return () => {
     return (
       <motion.section
@@ -19,4 +20,3 @@ const SectionWrapper = (Component, id) => {
   };
 };
 
-export default SectionWrapper;

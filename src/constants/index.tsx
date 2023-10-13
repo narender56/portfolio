@@ -13,7 +13,13 @@ export const navLinks = [
   },
 ];
 
-export const services = [
+export interface Service {
+  title: string;
+  tech: string[];
+  icon: string;
+}
+
+export const services: Service[] = [
   {
     title: 'Front-End Developer',
     tech: ['React', 'Angular', 'Vue', 'Svelte'],
@@ -35,8 +41,13 @@ export const services = [
     icon: 'services/ui-ux-designer.gif',
   },
 ];
+
+export interface Technology {
+  name: string;
+  icon: string;
+}
   
-export const technologies = [
+export const technologies: Technology[] = [
   {
     name: 'HTML 5',
     icon: 'technologies/html.png',
@@ -90,8 +101,17 @@ export const technologies = [
     icon: 'technologies/ionic.png',
   },
 ];
+
+export interface Experience {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  description: string;
+};
   
-export const experiences = [
+export const experiences: Experience[] = [
   {
     title: 'Senior Frontend Developer',
     company_name: 'AVIV Group GmBH',
@@ -134,25 +154,40 @@ export const experiences = [
   },
 ];
 
-export const testimonials = [
+export interface Social {
+  image: string;
+  link: string;
+}
+
+export const SocialLinks: Social[] = [
   {
-    key: 1,
     image: 'social/linkedin.gif',
     link: 'https://www.linkedin.com/in/narenv7/'
   },
   {
-    key: 2,
     image: 'social/gmail.gif',
     link: 'mailto:narenderv7@gmail.com'
   },
   {
-    key: 3,
     image: 'social/github.gif',
     link: 'https://github.com/narender56',
   }
 ];
+
+export interface ProjectsTag {
+  name: string;
+  color: string;
+};
+
+export interface Project {
+  name: string;
+  description: string;
+  image: string;
+  url: string;
+  tags: ProjectsTag[];
+}
   
-export const projects = [
+export const projects: Project[] = [
   {
     name: 'Car and Driver',
     description: 'Car and Driver is a respected automotive publication known for its comprehensive reviews, industry insights, and engaging content, catering to the interests of car enthusiasts worldwide. With a legacy of excellence, it continues to be a trusted source of information in the dynamic world of automobiles.',

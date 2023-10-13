@@ -10,8 +10,12 @@ import {
 
 import CanvasLoader from '../Loader';
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+interface BallProps {
+  imgUrl: string;
+};
+
+export const Ball = ({ imgUrl }: BallProps) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -37,7 +41,11 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+interface BallCanvasProps {
+  icon: string;
+};
+
+export const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
     <Canvas
       frameloop="always"
@@ -53,5 +61,3 @@ const BallCanvas = ({ icon }) => {
     </Canvas>
   );
 };
-
-export default BallCanvas;
