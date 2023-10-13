@@ -52,8 +52,8 @@ const ProjectCard = ({
         </div>
 
         <div className="my-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3 className="font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-[14px]">{description}</p>
         </div>
 
         <div className="flex flex-wrap gap-2 absolute bottom-2">
@@ -73,7 +73,7 @@ const ProjectCard = ({
 
 export const Projects = SectionWrapper(() => {
   return (
-    <div>
+    <div id="projects">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -82,7 +82,7 @@ export const Projects = SectionWrapper(() => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-[17px] max-w-3xl leading-[30px]"
         >
           Have a glance at my current/previous works 😎
         </motion.p>
@@ -95,4 +95,4 @@ export const Projects = SectionWrapper(() => {
       </div>
     </div>
   );
-}, 'Projects');
+}, 'bg-gradient-to-r from-rose-600 from-10% via-sky-500 via-30% to-indigo-600 to-90%');

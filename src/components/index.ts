@@ -6,5 +6,5 @@ export * from './About';
 export * from './Tech';
 export * from './Experience';
 export * from './Projects';
-export * from './Feedbacks';
+export * from './SocialMedia';
 export * from './Contact';

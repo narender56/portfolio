@@ -33,14 +33,14 @@ const ServiceCard = ({ index, title, tech, icon }: ServiceCardProps) => (
 export const About = SectionWrapper(() => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="about">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
+        className="mt-4 text-[17px] max-w-[3xl] leading-[30px]"
       >
         I'm a Full Stack Javascript Developer with over 8 years of experience in developing web applications and API's. I'm a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I'm used to wearing many hats. I'm a flexible developer who is always ready to take on new challenges.
       </motion.p>
@@ -55,4 +55,4 @@ export const About = SectionWrapper(() => {
       </div>
     </>
   );
-}, 'about');
+}, 'bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%');

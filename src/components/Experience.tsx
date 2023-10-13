@@ -46,7 +46,7 @@ const ExperienceCard = ({ company_name, title, date, description, icon, iconBg}:
 export const Experience = SectionWrapper(() => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} id="experience">
         <h2 className={`${styles.sectionHeadText}`}>
           Work Experience.
         </h2>
@@ -64,4 +64,4 @@ export const Experience = SectionWrapper(() => {
       </div>
     </>
   );
-}, 'experience');
+}, 'bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-cyan-500 to-90%');

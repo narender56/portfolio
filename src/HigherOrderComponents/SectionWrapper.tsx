@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { staggerContainer } from '../utils/motion';
 
-export const SectionWrapper = (Component: () => React.JSX.Element, id: string) => {
+export const SectionWrapper = (Component: () => React.JSX.Element, className: string) => {
  return () => {
     return (
       <motion.section
@@ -12,7 +12,7 @@ export const SectionWrapper = (Component: () => React.JSX.Element, id: string) =
         initial="hidden"
         whileInView="show"
         viewport={{once: true, amount: 0.25}}
-        className={`max-w-7xl mx-auto relative z-0 ${styles.padding}`}
+        className={`relative z-0 ${styles.padding} ${className}`}
       >
         <Component />
       </motion.section>
