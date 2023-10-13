@@ -3,13 +3,15 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
+import { useIsMobile } from '../../hooks';
 
 const Earth = () => {
+  const isMobile = useIsMobile();
+
   const earth = useGLTF('./threejs/t-rex/scene.gltf');
   const { actions } = useAnimations(earth.animations, earth.scene)
 
   useEffect(() => {
-    console.log(actions);
     actions['walk loop']?.play?.();
     actions['roar left']?.play?.();
   }, []);
@@ -17,7 +19,7 @@ const Earth = () => {
   return (
     <>
       <spotLight position={[20, 50, 10]} angle={2} penumbra={2} intensity={5} castShadow shadow-mapSize={1024} />
-      <primitive object={earth.scene} scale={0.4} rotation-y={-33} />
+      <primitive object={earth.scene} scale={isMobile ? 0.7 : 0.4} rotation-y={-33} />
     </>
   );
 };
