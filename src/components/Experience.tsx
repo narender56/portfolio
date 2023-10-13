@@ -48,7 +48,7 @@ export const Experience = SectionWrapper(() => {
     <>
       <motion.div variants={textVariant()} id="experience">
         <h2 className={`${styles.sectionHeadText}`}>
-          Work Experience.
+          Here's the Companies I Working/ed for
         </h2>
       </motion.div>
 

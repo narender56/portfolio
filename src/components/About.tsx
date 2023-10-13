@@ -34,8 +34,7 @@ export const About = SectionWrapper(() => {
   return (
     <>
       <motion.div variants={textVariant()} id="about">
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Lil bit about me.</h2>
       </motion.div>
 
       <motion.p
