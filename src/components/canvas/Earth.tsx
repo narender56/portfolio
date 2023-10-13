@@ -17,7 +17,7 @@ const Earth = () => {
   return (
     <>
       <spotLight position={[20, 50, 10]} angle={2} penumbra={2} intensity={5} castShadow shadow-mapSize={1024} />
-      <primitive object={earth.scene} scale={0.31} rotation-y={-45} />
+      <primitive object={earth.scene} scale={0.4} rotation-y={-33} />
     </>
   );
 };
