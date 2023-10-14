@@ -72,9 +72,10 @@ export const Navbar = () => {
 
           <div className="sm:hidden flex flex-1 justify-end items-center">
             <img
-              src={(toggle ? 'close.svg' : scrolled ? 'menu.svg' : 'menu_black.svg')}
+              src={(scrolled ? toggle ? 'close.svg' : 'menu.svg' : toggle ? 'close_black.svg'  : 'menu_black.svg')}
               alt="menu"
               className="w-[28px] h-[28px] object-contain"
+              onClick={() => setToggle(!toggle)}
             />
 
             <div className={`p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl ${!toggle ? 'hidden' : 'flex'}`}>
@@ -83,9 +84,7 @@ export const Navbar = () => {
                   <li
                     key={nav.id}
                     className="font-poppins font-medium cursor-pointer text-[16px]"
-                    onClick={() => {
-                      setToggle(!toggle);
-                    }}
+                    onClick={() => setToggle(!toggle)}
                   >
                     <a className="hover:scale-125 hover:font-extrabold text-white" href={`#${nav.id}`}>{nav.title}</a>
                   </li>

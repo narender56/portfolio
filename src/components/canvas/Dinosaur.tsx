@@ -5,11 +5,11 @@ import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/dre
 import CanvasLoader from '../Loader';
 import { useIsMobile } from '../../hooks';
 
-const Earth = () => {
+const Dinosaur = () => {
   const isMobile = useIsMobile();
 
   const earth = useGLTF('./threejs/t-rex/scene.gltf');
-  const { actions } = useAnimations(earth.animations, earth.scene)
+  const { actions } = useAnimations(earth.animations, earth.scene);
 
   useEffect(() => {
     actions['walk loop']?.play?.();
@@ -24,26 +24,28 @@ const Earth = () => {
   );
 };
 
-export const EarthCanvas = () => {
+export const DinosaurCanvas = () => {
+
   return (
     <Canvas
       frameloop="always"
+      id="canvasRef"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
-      color='#dddddd'
       camera={{
         fov: 45,
         near: 0.1,
         far: 400,
         position: [-4, 3, 6],
       }}
+
+      onTouchMove={() => console.log('touch')}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate={false}
         />
-        <Earth />
-
+        <Dinosaur />
         <Preload all />
       </Suspense>
     </Canvas>
