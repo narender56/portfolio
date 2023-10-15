@@ -1,13 +1,13 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import { EffectCards } from 'swiper/modules';
+import { EffectCards, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-
+import 'swiper/swiper-bundle.css';
 
 import { Service, services } from '../constants';
 import { fadeIn } from '../utils/motion';
@@ -55,8 +55,13 @@ export const Services = () => {
       <Swiper
         effect="cards"
         grabCursor={true}
-        modules={[EffectCards]}
+        modules={[EffectCards, Pagination]}
         className="w-full overflow-hidden"
+        pagination={{
+          type: 'bullets',
+          el: '.swiper-pagination',
+          clickable: true,
+        }}
         autoplay
         loop
       >
@@ -71,6 +76,27 @@ export const Services = () => {
           ))
         }
       </Swiper>
+      <style>
+        {
+          `
+          .swiper-pagination-bullet {
+            text-align: center;
+            height: 10px;
+            width: 10px;
+            line-height: 20px;
+            font-size: 12px;
+            opacity: 1;
+            background-color: #8a5cf5;
+          }
+    
+          .swiper-pagination-bullet-active {
+            background-color: #ffffff;
+            scale: 1.5;
+          }
+          `
+        }
+      </style>
+      <div className="swiper-pagination !bottom-16"></div>
     </>
   );
 }
