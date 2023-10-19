@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
+
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../HigherOrderComponents';
@@ -13,9 +15,16 @@ export const About = SectionWrapper(() => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-[17px] max-w-[3xl] leading-[30px]"
+        className="mt-4 text-[17px] max-w-[3xl] leading-[30px] animate-typewriter"
       >
-        I'm a Full Stack Javascript Developer with over 8 years of experience in developing web applications and API's. I'm a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I'm used to wearing many hats. I'm a flexible developer who is always ready to take on new challenges.
+        <TypeAnimation
+          sequence={
+            [
+              'I\'m a Full Stack Javascript Developer with over 8 years of experience in developing web applications and API\'s. I\'m a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I\'m used to wearing many hats. I\'m a flexible developer who is always ready to take on new challenges.',
+              1000
+            ]
+          }
+        />
       </motion.p>
       <div className="my-16 flex justify-between h-full items-stretch flex-wrap gap-10">
         <Services />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
@@ -16,7 +17,7 @@ export const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
-            <span className=''>Hey</span>, I'm Naren
+            <TypeAnimation sequence={['Hey, I\'m Naren']} />
           </h1>
           <p className={`${styles.heroSubText} text-white`}>
             JavaScript Full Stack Developer

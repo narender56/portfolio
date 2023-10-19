@@ -20,6 +20,16 @@ module.exports = {
       screens: {
         xs: '450px',
       },
+      animation: {
+        typewriter: 'typewriter 2s steps(11) forwards'
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: '100%'
+          }
+        }
+      }
     },
   },
   plugins: [],
