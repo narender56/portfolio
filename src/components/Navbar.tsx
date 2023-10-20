@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+import { SocialLinks, navLinks } from '../constants';
 import ResumeButton from './ResumeButton';
 import { useIsMobile } from '../hooks';
+import { SocialMediaCard } from './SocialMedia';
 
 export const Navbar = () => {
   const isMobile = useIsMobile();
@@ -66,6 +67,11 @@ export const Navbar = () => {
               </li>
             ))}
           </ul>
+          <ul className="flex gap-6 hidden sm:flex items-center">
+            {SocialLinks.map((card, index) => (
+              <li><SocialMediaCard key={card.link} link={card.link} image={card.image} index={index} /></li>
+            ))}
+          </ul>
           <div className="mt-2 lg:block hidden">
             <ResumeButton />
           </div>
@@ -94,6 +100,9 @@ export const Navbar = () => {
                     <ResumeButton />
                   </div>
                 </li>
+                {SocialLinks.map((card, index) => (
+                  <li><SocialMediaCard key={card.link} link={card.link} image={card.image} index={index} /></li>
+                ))}
               </ul>
             </div>
           </div>

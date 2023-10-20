@@ -170,11 +170,15 @@ export const SocialLinks: Social[] = [
   },
   {
     image: 'social/gmail.gif',
-    link: 'mailto:narenderv7@gmail.com'
+    link: 'https://mail.google.com/mail/?view=cm&fs=1&to=narenderv7@gmail.com'
   },
   {
     image: 'social/github.gif',
     link: 'https://github.com/narender56',
+  },
+  {
+    image: 'social/whatsapp.gif',
+    link: 'https://wa.me/15751408499',
   }
 ];
 

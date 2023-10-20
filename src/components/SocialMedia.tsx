@@ -8,7 +8,7 @@ interface SocialMediaCardProps extends Social {
   index: number;
 }
 
-const SocialMediaCard = ({
+export const SocialMediaCard = ({
   index,
   link,
   image,
@@ -18,7 +18,7 @@ const SocialMediaCard = ({
   >
     <div className="mt-1">
       <a href={link} target="_blank">
-        <img src={image} alt={image} className="w-48 h-48 rounded-lg"/>
+        <img src={image} alt={image} className="w-10 h-10 rounded-lg"/>
       </a>
     </div>
   </motion.div>
