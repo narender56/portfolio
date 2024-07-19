@@ -23,32 +23,22 @@ const ProjectCard = ({
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 10,
           scale: 1,
           speed: 500,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full relative"
       >
+        <a
+              href={url}
+              target="_blank"
+            >
         <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
-
-          <div className="absolute inset-0 flex justify-end m-3">
-            <a
-              href={url}
-              className="violet-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              target="_blank"
-            >
-              <img
-                src={'common/link.png'}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </a>
-          </div>
         </div>
 
         <div className="my-5">
@@ -66,6 +56,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+        </a>
       </Tilt>
     </motion.div>
   );
