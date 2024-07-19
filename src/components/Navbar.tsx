@@ -16,7 +16,7 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -31,6 +31,8 @@ export const Navbar = () => {
   const handleProfileClick = (e: any) => {
     e.stopPropagation();
   }
+
+  console.log(scrolled)
 
   return (
     <>
@@ -61,13 +63,13 @@ export const Navbar = () => {
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className={`text-[18px] font-medium cursor-pointer hover:scale-125 text-white hover:font-extrabold`}
+                className={`text-[18px] font-medium cursor-pointer hover:scale-125 hover:font-extrabold`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
-          <ul className="flex gap-6 hidden sm:flex items-center">
+          <ul className="gap-6 hidden sm:flex items-center">
             {SocialLinks.map((card, index) => (
               <li key={card.link}><SocialMediaCard link={card.link} image={card.image} index={index} /></li>
             ))}
