@@ -10,7 +10,7 @@ export const About = SectionWrapper(() => {
   return (
     <>
       <motion.div variants={textVariant()} id="about">
-        <h2 className={styles.sectionHeadText}>Lil bit about me.</h2>
+        <h2 className={styles.sectionHeadText}>Lil bout me</h2>
       </motion.div>
 
       <motion.p
@@ -20,7 +20,7 @@ export const About = SectionWrapper(() => {
         <TypeAnimation
           sequence={
             [
-              'I\'m a Full Stack Javascript Developer with over 8 years of experience in developing web applications and API\'s. I\'m a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I\'m used to wearing many hats. I\'m a flexible developer who is always ready to take on new challenges.',
+              'I\'m a Javascript & Flutter Developer with over 10 years of experience in developing web applications and API\'s. I\'m a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I\'m used to wearing many hats. I\'m a flexible developer who is always ready to take on new challenges.',
               1000
             ]
           }

@@ -69,7 +69,7 @@ export const Navbar = () => {
           </ul>
           <ul className="flex gap-6 hidden sm:flex items-center">
             {SocialLinks.map((card, index) => (
-              <li><SocialMediaCard key={card.link} link={card.link} image={card.image} index={index} /></li>
+              <li key={card.link}><SocialMediaCard link={card.link} image={card.image} index={index} /></li>
             ))}
           </ul>
           <div className="mt-2 lg:block hidden">
@@ -101,7 +101,7 @@ export const Navbar = () => {
                   </div>
                 </li>
                 {SocialLinks.map((card, index) => (
-                  <li><SocialMediaCard key={card.link} link={card.link} image={card.image} index={index} /></li>
+                  <li key={card.link}><SocialMediaCard  link={card.link} image={card.image} index={index} /></li>
                 ))}
               </ul>
             </div>

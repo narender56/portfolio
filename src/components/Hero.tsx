@@ -20,7 +20,7 @@ export const Hero = () => {
             <TypeAnimation sequence={['Hey, I\'m Naren']} />
           </h1>
           <p className={`${styles.heroSubText} text-white`}>
-            JavaScript Full Stack Developer
+            JavaScript & Flutter Developer
             <br className="sm:block hidden" /> and a UI/UX<sup className="text-xs align-super">(20%)</sup> Designer
           </p>
         </div>

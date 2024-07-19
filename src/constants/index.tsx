@@ -1,7 +1,7 @@
 export const navLinks = [
   {
     id: 'about',
-    title: 'About me',
+    title: 'About Me',
   },
   {
     id: 'experience',
@@ -26,17 +26,17 @@ export interface Service {
 export const services: Service[] = [
   {
     title: 'Front-End Developer',
-    tech: ['React', 'Angular', 'Vue', 'Svelte'],
+    tech: ['React', 'Angular 18', 'Vue', 'Svelte', 'SolidJS'],
     icon: 'services/web_development.gif',
   },
   {
     title: 'Mobile Developer',
-    tech: ['React Naitve', 'Ionic Framework', 'NativeScript'],
+    tech: ['Flutter', 'Ionic Framework', 'NativeScript','React Naitve'],
     icon: 'services/mobile_development.gif',
   },
   {
     title: 'Backend Developer',
-    tech: ['Node JS', 'MongoDB', 'Express'],
+    tech: ['Node JS', 'NestJS', 'MongoDB', 'Express'],
     icon: 'services/backend_development.gif',
   },
   {
@@ -63,6 +63,10 @@ export const technologies: Technology[] = [
   {
     name: 'JavaScript',
     icon: 'technologies/javascript.png',
+  },
+  {
+    name: 'Flutter',
+    icon: 'technologies/flutter.gif',
   },
   {
     name: 'TypeScript',
@@ -93,10 +97,6 @@ export const technologies: Technology[] = [
     icon: 'technologies/mongodb.png',
   },
   {
-    name: 'React Native',
-    icon: 'technologies/react-native.png',
-  },
-  {
     name: 'NativeScript',
     icon: 'technologies/nativescript.png',
   },
@@ -122,7 +122,7 @@ export const experiences: Experience[] = [
     icon: 'work/immowelt.png',
     iconBg: '#F7C604',
     date: 'Nov 2022 -  Present',
-    description: 'As a Senior Frontend Developer at AVIV Group (Immowelt), I bring a wealth of experience in crafting seamless user interfaces. I collaborate closely with cross-functional teams, leveraging cutting-edge technologies to create intuitive, visually appealing, and highly responsive web applications. With a keen eye for detail and a passion for performance optimisation, I ensure our products provide an exceptional user experience across devices and browsers. Additionally, I actively contribute to code reviews and mentor junior developers, fostering a collaborative and knowledge-sharing environment, ultimately playing a pivotal role in elevating front-end development efforts at AVIV Group.',
+    description: 'At AVIV Group, I play a key role in leveraging Mircofrontend architecture, resulting in smoother and more efficient UI development. This approach significantly minimizes redundant code and ensures a consistent user experience. Additionally, I focus on optimizing our applications for speed and responsiveness. Being an integral part of an agile team allows us to swiftly adapt to changes. I also contribute by conducting code reviews, providing guidance to junior developers, and fostering a culture of continuous learning, ultimately enhancing our development process.',
   },
   {
     title: 'Frontend Developer',
@@ -130,15 +130,15 @@ export const experiences: Experience[] = [
     icon: 'work/aboutyou.png',
     iconBg: '#F3F3F3',
     date: 'March 2021 - Sep 2022',
-    description: 'As a front-end developer for the Checkout team, I worked on improving the user checkout process and enhancing the purchase lifecycle by offering a range of payment options. Collaborated with the team to integrate multiple payment gateways and optimize the checkout process. The end result was a streamlined and user-friendly checkout process, leading to increased successful purchases and customer satisfaction.',
+    description: 'At ABOUTYOU, I focused on improving the user checkout process, making it smoother and more user-friendly. I worked with a team to integrate different payment options, making sure customers could easily complete their purchases. This resulted in more successful transactions and happier customers. Additionally, I was part of a team that adapted quickly to changes and worked closely with others to review code and help junior developers. This collaborative environment made our development process more effective.',
   },
   {
     title: 'Senior Engineer',
-    company_name: 'Paypal(Altrimetric)',
+    company_name: 'Paypal(Altimetric)',
     icon: 'work/paypal.png',
     iconBg: '#016DD9',
     date: 'Sep 2020 - Feb 2021',
-    description: 'As a member of the PayPal team, I worked on developing enterprise web applications and next-generation web applications that catered to the needs of fraud analysts. To meet their requirements, we designed user interfaces that allowed users to explore, analyze, and view a large number of data points. To achieve this, we used modern development frameworks and tools to develop applications that were scalable, secure, and could handle large amounts of data. We also collaborated closely with the fraud analysts to understand their needs and requirements and incorporated their feedback into the design and development process.'
+    description: 'At PayPal, I developed web applications tailored for fraud analysis. This involved creating user interfaces that allowed easy exploration of large sets of data. We focused on making sure the applications were secure, scalable, and could handle a lot of data. I also worked with an international team to thoroughly test and debug the applications, ensuring they worked well on different devices and browsers.'
   },
   {
     title: 'Senior UI Developer',
@@ -146,7 +146,7 @@ export const experiences: Experience[] = [
     icon: 'work/techolution.png',
     iconBg: '#93bA3B',
     date: 'May 2017 - Aug 2020',
-    description: 'As part of the Techolution(Hearst Autos) team, I worked side-by-side with international developers, project managers, analytics managers, and account managers to successfully develop, test, and debug the caranddriver.com website. We utilized modern development frameworks and tools to ensure the site is scalable, secure, and provides a seamless user experience. Additionally, we conducted extensive testing to ensure the site is responsive and accessible on various devices and browsers. We collaborated closely with the team to identify and fix any bugs or issues that arose during development, ensuring a high-quality end product.',
+    description: 'At Techolution, I collaborated with an international (HearstAutos) team to develop and refine the caranddriver website. We used modern tools to ensure it was secure, scalable, and provided a seamless experience for users. I also conducted extensive testing to make sure the site worked well on various devices and browsers. I worked closely with the team to fix any issues that came up during development, ensuring a high-quality end product.',
   },
   {
     title: 'Software Developer',
