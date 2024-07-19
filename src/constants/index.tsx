@@ -66,7 +66,7 @@ export const technologies: Technology[] = [
   },
   {
     name: 'Flutter',
-    icon: 'technologies/flutter.gif',
+    icon: 'technologies/flutter.png',
   },
   {
     name: 'TypeScript',
