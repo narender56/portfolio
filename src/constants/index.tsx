@@ -121,7 +121,7 @@ export const experiences: Experience[] = [
     company_name: 'AVIV Group GmBH',
     icon: 'work/immowelt.png',
     iconBg: '#F7C604',
-    date: 'Nov 2022 -  Present',
+    date: 'Oct 2023 -  Present',
     description: 'At AVIV Group, I play a key role in leveraging Mircofrontend architecture, resulting in smoother and more efficient UI development. This approach significantly minimizes redundant code and ensures a consistent user experience. Additionally, I focus on optimizing our applications for speed and responsiveness. Being an integral part of an agile team allows us to swiftly adapt to changes. I also contribute by conducting code reviews, providing guidance to junior developers, and fostering a culture of continuous learning, ultimately enhancing our development process.',
   },
   {
@@ -129,7 +129,7 @@ export const experiences: Experience[] = [
     company_name: 'ABOUT YOU GmbH',
     icon: 'work/aboutyou.png',
     iconBg: '#F3F3F3',
-    date: 'March 2021 - Sep 2022',
+    date: 'March 2021 - Sep 2023',
     description: 'At ABOUTYOU, I focused on improving the user checkout process, making it smoother and more user-friendly. I worked with a team to integrate different payment options, making sure customers could easily complete their purchases. This resulted in more successful transactions and happier customers. Additionally, I was part of a team that adapted quickly to changes and worked closely with others to review code and help junior developers. This collaborative environment made our development process more effective.',
   },
   {
@@ -137,7 +137,7 @@ export const experiences: Experience[] = [
     company_name: 'Paypal(Altimetric)',
     icon: 'work/paypal.png',
     iconBg: '#016DD9',
-    date: 'Sep 2020 - Feb 2021',
+    date: 'Sep 2020 - Jan 2021',
     description: 'At PayPal, I developed web applications tailored for fraud analysis. This involved creating user interfaces that allowed easy exploration of large sets of data. We focused on making sure the applications were secure, scalable, and could handle a lot of data. I also worked with an international team to thoroughly test and debug the applications, ensuring they worked well on different devices and browsers.'
   },
   {
