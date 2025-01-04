@@ -20,7 +20,7 @@ export const About = SectionWrapper(() => {
         <TypeAnimation
           sequence={
             [
-              'I\'m a Javascript & Flutter Developer with over 10 years of experience in developing web applications and API\'s. I\'m a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I\'m used to wearing many hats. I\'m a flexible developer who is always ready to take on new challenges.',
+              'I\'m a Javascript & Flutter Developer with over 9 years of experience in developing web applications and API\'s. I\'m a product-focused developer who priorities user feedback first and foremost. Most of my work experience has been at startup companies as well as large organizations, so I\'m used to wearing many hats. I\'m a flexible developer who is always ready to take on new challenges.',
               1000
             ]
           }
