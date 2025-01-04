@@ -118,7 +118,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     title: 'Senior Frontend Developer',
-    company_name: 'AVIV Group GmBH',
+    company_name: 'AVIV Group GmBH - Hamburg',
     icon: 'work/immowelt.png',
     iconBg: '#F7C604',
     date: 'Oct 2023 -  Present',
@@ -126,7 +126,7 @@ export const experiences: Experience[] = [
   },
   {
     title: 'Frontend Developer',
-    company_name: 'ABOUT YOU GmbH',
+    company_name: 'ABOUT YOU GmbH - Hamburg',
     icon: 'work/aboutyou.png',
     iconBg: '#F3F3F3',
     date: 'March 2021 - Sep 2023',
@@ -134,7 +134,7 @@ export const experiences: Experience[] = [
   },
   {
     title: 'Senior Engineer',
-    company_name: 'Paypal(Altimetric)',
+    company_name: 'Paypal(Altimetric) - Hyderabad',
     icon: 'work/paypal.png',
     iconBg: '#016DD9',
     date: 'Sep 2020 - Jan 2021',
@@ -150,10 +150,10 @@ export const experiences: Experience[] = [
   },
   {
     title: 'Software Developer',
-    company_name: 'nibbleMatrix',
+    company_name: 'nibbleMatrix - Hyderabad',
     icon: 'work/nibblematrix.png',
     iconBg: '#BA1D08',
-    date: 'May 2017 - Aug 2020',
+    date: 'Nov 2015 - April 2017',
     description: 'I began my career here and worked on numerous minor projects, where I acquired many technical skills from colleagues. In response to the client\'s needs, we developed an e-commerce online food application that catered to both day-to-day and weekly orders. The solution included an intuitive user interface that allowed customers to browse and select their preferred food items and place orders. Additionally, the application provided real-time notifications to the client regarding new orders, enabling them to manage their online food orders efficiently. To ensure that the application met the client\'s business needs, we worked closely with them to identify their specific requirements, such as payment gateways, inventory management, and order processing. We also integrated features to enable customers to leave reviews and ratings, helping the client to improve their customer service and reputation.'
   },
 ];
