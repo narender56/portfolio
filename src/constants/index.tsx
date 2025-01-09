@@ -133,19 +133,11 @@ export const experiences: Experience[] = [
     description: 'At ABOUTYOU, I focused on improving the user checkout process, making it smoother and more user-friendly. I worked with a team to integrate different payment options, making sure customers could easily complete their purchases. This resulted in more successful transactions and happier customers. Additionally, I was part of a team that adapted quickly to changes and worked closely with others to review code and help junior developers. This collaborative environment made our development process more effective.',
   },
   {
-    title: 'Senior Engineer',
-    company_name: 'Paypal(Altimetric) - Hyderabad',
-    icon: 'work/paypal.png',
-    iconBg: '#016DD9',
-    date: 'Sep 2020 - Jan 2021',
-    description: 'At PayPal, I developed web applications tailored for fraud analysis. This involved creating user interfaces that allowed easy exploration of large sets of data. We focused on making sure the applications were secure, scalable, and could handle a lot of data. I also worked with an international team to thoroughly test and debug the applications, ensuring they worked well on different devices and browsers.'
-  },
-  {
     title: 'Senior UI Developer',
     company_name: 'Techolution',
     icon: 'work/techolution.png',
     iconBg: '#93bA3B',
-    date: 'May 2017 - Aug 2020',
+    date: 'May 2017 - Oct 2020',
     description: 'At Techolution, I collaborated with an international (HearstAutos) team to develop and refine the caranddriver website. We used modern tools to ensure it was secure, scalable, and provided a seamless experience for users. I also conducted extensive testing to make sure the site worked well on various devices and browsers. I worked closely with the team to fix any issues that came up during development, ensuring a high-quality end product.',
   },
   {
