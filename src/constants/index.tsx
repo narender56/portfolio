@@ -129,7 +129,7 @@ export const experiences: Experience[] = [
     company_name: 'ABOUT YOU GmbH - Hamburg',
     icon: 'work/aboutyou.png',
     iconBg: '#F3F3F3',
-    date: 'March 2021 - Sep 2023',
+    date: 'March 2021 - Jul 2023',
     description: 'At ABOUTYOU, I focused on improving the user checkout process, making it smoother and more user-friendly. I worked with a team to integrate different payment options, making sure customers could easily complete their purchases. This resulted in more successful transactions and happier customers. Additionally, I was part of a team that adapted quickly to changes and worked closely with others to review code and help junior developers. This collaborative environment made our development process more effective.',
   },
   {
@@ -137,7 +137,7 @@ export const experiences: Experience[] = [
     company_name: 'Techolution',
     icon: 'work/techolution.png',
     iconBg: '#93bA3B',
-    date: 'May 2017 - Oct 2020',
+    date: 'May 2017 - Sep 2020',
     description: 'At Techolution, I collaborated with an international (HearstAutos) team to develop and refine the caranddriver website. We used modern tools to ensure it was secure, scalable, and provided a seamless experience for users. I also conducted extensive testing to make sure the site worked well on various devices and browsers. I worked closely with the team to fix any issues that came up during development, ensuring a high-quality end product.',
   },
   {
