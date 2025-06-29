@@ -119,17 +119,17 @@ export const experiences: Experience[] = [
   {
     title: 'Senior Frontend Developer',
     company_name: 'AVIV Group GmBH - Hamburg',
-    icon: 'work/immowelt.png',
+    icon: 'work/empro.png',
     iconBg: '#F7C604',
     date: 'Oct 2023 -  Present',
-    description: 'At AVIV Group, I play a key role in leveraging Mircofrontend architecture, resulting in smoother and more efficient UI development. This approach significantly minimizes redundant code and ensures a consistent user experience. Additionally, I focus on optimizing our applications for speed and responsiveness. Being an integral part of an agile team allows us to swiftly adapt to changes. I also contribute by conducting code reviews, providing guidance to junior developers, and fostering a culture of continuous learning, ultimately enhancing our development process.',
+    description: 'At AVIV Group (Empro), I play a key role in leveraging Mircofrontend architecture, resulting in smoother and more efficient UI development. This approach significantly minimizes redundant code and ensures a consistent user experience. Additionally, I focus on optimizing our applications for speed and responsiveness. Being an integral part of an agile team allows us to swiftly adapt to changes. I also contribute by conducting code reviews, providing guidance to junior developers, and fostering a culture of continuous learning, ultimately enhancing our development process.',
   },
   {
     title: 'Frontend Developer',
     company_name: 'ABOUT YOU GmbH - Hamburg',
     icon: 'work/aboutyou.png',
     iconBg: '#F3F3F3',
-    date: 'March 2021 - Jul 2023',
+    date: 'March 2021 - Sep 2023',
     description: 'At ABOUTYOU, I focused on improving the user checkout process, making it smoother and more user-friendly. I worked with a team to integrate different payment options, making sure customers could easily complete their purchases. This resulted in more successful transactions and happier customers. Additionally, I was part of a team that adapted quickly to changes and worked closely with others to review code and help junior developers. This collaborative environment made our development process more effective.',
   },
   {
@@ -229,8 +229,8 @@ export const projects: Project[] = [
     url: 'https://en.aboutyou.de/',
   },
   {
-    name: 'Immowelt',
-    description: 'Immowelt, a flagship platform of AVIV Group, stands as a prominent real estate marketplace renowned for its innovative property solutions. As a Senior Frontend Developer, I spearhead the creation of seamless, visually engaging web applications. By optimizing performance and offering mentorship to junior developers, I play a pivotal role in ensuring Immowelt\'s user-friendly and high-performing platform. This enables users to effortlessly navigate through an extensive array of property listings, making their real estate experience with Immowelt a breeze.',
+    name: 'Empro',
+    description: 'Empro, a flagship platform of AVIV Group, stands as a prominent real estate marketplace renowned for its innovative property solutions. As a Senior Frontend Developer, I spearhead the creation of seamless, visually engaging web applications. By optimizing performance and offering mentorship to junior developers, I play a pivotal role in ensuring Immowelt\'s user-friendly and high-performing platform. This enables users to effortlessly navigate through an extensive array of property listings, making their real estate experience with Empro a breeze.',
     tags: [
       {
         name: 'react',
@@ -241,7 +241,7 @@ export const projects: Project[] = [
         color: 'green-text-gradient',
       },
     ],
-    image: 'projects/immowelt.png',
-    url: 'https://www.immowelt.de/',
+    image: 'projects/empro.png',
+    url: 'https://www.empro.de/',
   },
 ];
